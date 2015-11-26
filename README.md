@@ -5,8 +5,9 @@ Get info for all photos in a Flickr set (now called albums).
 ## Why?
 
 The Flickr API's [photosets.getPhotos](https://www.flickr.com/services/api/flickr.photosets.getPhotos.html)
-endpoint returns an array of photo metadata, but not enough. The response doesn't include the actual
-URLs to the photos. This package simplifies the process of getting all metadata for every photo in a set.
+endpoint returns an array of photo metadata, but that metadata is lacking. The response doesn't include the actual
+URLs to the photos. This package simplifies the process of getting all metadata by asynchronously fetching
+metadata for every photo in the set.
 
 ## Programmatic Usage
 
@@ -37,13 +38,13 @@ tell you how to set up your Flickr API key.
 Then pass it a photoset ID:
 
 ```sh
-flickr-photo-info 72157646234635567
+flickr-photoset-info 72157646234635567
 ```
 
 The resulting JSON will be printed to STDOUT. To pipe it into a file:
 
 ```sh
-flickr-photo-info 72157646234635567 > data.json
+flickr-photoset-info 72157646234635567 > data.json
 ```
 
 ## Tests
