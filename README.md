@@ -71,3 +71,5 @@ npm test
 ## License
 
 MIT
+
+[![Build Status](https://travis-ci.org/npm-flickr/flickr-photoset-info.svg?branch=master)](https://travis-ci.org/npm-flickr/flickr-photoset-info)
