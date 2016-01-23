@@ -22,9 +22,14 @@ describe('flickr-photoset-info', function () {
 
   it('returns an array of photo objects', function () {
     assert(Array.isArray(photos))
-    assert(photos[0])
-    assert(photos[0].urls)
-    assert(photos[0].urls.original)
+    var photo = photos[0]
+    assert(photo)
+    assert(photo.urls)
+    assert(photo.urls.original)
+    assert(photo.sizes.original.width)
+    assert(photo.sizes.original.height)
+    assert(photo.sizes.original.source)
+    assert(photo.sizes.original.url)
   })
 
   it('can be used a CLI that writes JSON to stdout', function (done) {

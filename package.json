@@ -36,6 +36,8 @@
     "dotenv": "^1.2.0",
     "flickr-client": "0.0.3",
     "flickr-photo-info": "0.0.0",
+    "flickr-photo-urls": "0.0.1",
+    "lodash.merge": "^4.0.1",
     "userhome": "^1.0.0"
   }
 }
