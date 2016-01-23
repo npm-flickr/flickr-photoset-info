@@ -1,6 +1,6 @@
 {
   "name": "flickr-photoset-info",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Get info for all photos in a Flickr set (now called albums)",
   "main": "index.js",
   "bin": "cli.js",
