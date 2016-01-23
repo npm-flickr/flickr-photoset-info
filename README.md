@@ -60,6 +60,8 @@ npm test
 - [dotenv](https://github.com/motdotla/dotenv): Loads environment variables from .env file
 - [flickr-client](https://github.com/npm-flickr/flickr-client): Flickr API Client
 - [flickr-photo-info](https://github.com/npm-flickr/flickr-photo-info): Get info of a photo on Flickr
+- [flickr-photo-urls](https://github.com/npm-flickr/flickr-photo-urls): Get source urls with varied sizes of a Flickr photo
+- [lodash.merge](https://github.com/lodash/lodash): The lodash method `_.merge` exported as a module.
 - [userhome](https://github.com/shama/userhome): A cross-platform path to the user&#39;s home
 
 ## Dev Dependencies
