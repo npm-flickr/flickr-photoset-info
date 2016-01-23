@@ -32,12 +32,13 @@ describe('flickr-photoset-info', function () {
     assert(photo.sizes.original.url)
   })
 
-  it('returns a widthAsPercentageOfHeight number', function () {
+  it('returns a width and height percentages (for making fixed aspect ratios with CSS)', function () {
     var photo = photos[0]
     var w = photo.sizes.original.width
     var h = photo.sizes.original.height
     assert(photo.widthAsPercentageOfHeight)
     assert.equal(photo.widthAsPercentageOfHeight, parseInt(w / h * 100, 10))
+    assert.equal(photo.heightAsPercentageOfWidth, parseInt(h / w * 100, 10))
   })
 
   it('can be used a CLI that writes JSON to stdout', function (done) {

@@ -18,6 +18,7 @@ module.exports = function (flickrSetId, options, callback) {
           var w = photo.sizes.original.width
           var h = photo.sizes.original.height
           photo.widthAsPercentageOfHeight = parseInt(w / h * 100, 10)
+          photo.heightAsPercentageOfWidth = parseInt(h / w * 100, 10)
           return photo
         })
         return callback(null, photos)
