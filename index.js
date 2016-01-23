@@ -14,7 +14,11 @@ module.exports = function (flickrSetId, options, callback) {
       async.map(ids, flickr.urls, function (err, urls) {
         if (err) return callback(err)
         var photos = infos.map(function (info, index) {
-          return merge(info, {sizes: urls[index]})
+          var photo = merge(info, {sizes: urls[index]})
+          var w = photo.sizes.original.width
+          var h = photo.sizes.original.height
+          photo.widthAsPercentageOfHeight = parseInt(w / h * 100, 10)
+          return photo
         })
         return callback(null, photos)
       })
